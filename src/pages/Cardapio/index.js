@@ -1,15 +1,13 @@
-// src\pages\Cardapio\index.js
-
-import Cardapio from '../../components/TelaCardapio';
-import './styles.css';
-// import logo from '../../assets/images/logo.png';
+import React from "react";
+import TelaCardapio from "../../components/TelaCardapio";
+import "./styles.css";
 
 function PaginaCardapio() {
-    return (
-        <div className="container-cardapio">
-            <Cardapio />
-        </div>
-    );
+  return (
+    <div className="cardapio-container">
+      <TelaCardapio />
+    </div>
+  );
 }
 
 export default PaginaCardapio;

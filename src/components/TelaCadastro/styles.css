@@ -1,0 +1,136 @@
+.tela-cadastro-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding: 16px;
+  background-color: #121212;
+  box-sizing: border-box;
+}
+
+.form-cadastro {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 25px;
+  border-radius: 16px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6);
+  color: #fff;
+  width: 100%;
+  max-width: 600px;
+  animation: fadeInForm 0.6s ease-in-out;
+}
+
+@keyframes fadeInForm {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+}
+
+.input-group label {
+  margin-bottom: 4px;
+  font-weight: 500;
+  color: #e0e0e0;
+}
+
+.input-group input,
+.input-group textarea,
+.input-group select {
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  background-color: #2c2c2c;
+  color: #fff;
+  font-size: 16px;
+  transition: outline 0.2s;
+}
+
+.input-group input:focus,
+.input-group textarea:focus,
+.input-group select:focus {
+  outline: 2px solid #00c851;
+}
+
+.input-row {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.input-group.small {
+  flex: 1;
+  min-width: 45%;
+}
+
+.btn-primary {
+  background-color: #00c851;
+  color: #fff;
+  padding: 14px 24px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  margin-top: 12px;
+  width: 100%;
+}
+
+.btn-primary:hover {
+  background-color: #00913c;
+}
+
+.botoes-navegacao {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.botoes-navegacao .btn-primary {
+  flex: 1;
+  text-align: center;
+  padding: 14px 0;
+}
+
+.mensagem-sucesso {
+  background-color: #d1f7c4;
+  color: #2b5d1c;
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: bold;
+  animation: fadeInOut 3s ease-in-out;
+  position: absolute;
+  top: 20px;
+  width: 90%;
+  max-width: 500px;
+  z-index: 10;
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  10% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+}

@@ -1,16 +1,9 @@
-/* src\pages\Home\styles.css */
-
 .home {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 100vh;
-  background-color: #000000;
-}
-
-@media (max-width: 600px) {
-  .home {
-    padding: 10px;
-  }
+  /* Remover background-color */
+  /* background-color: #000000; */
 }

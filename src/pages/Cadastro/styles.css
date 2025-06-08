@@ -1,15 +1,35 @@
-/* src\pages\Cadastro\styles.css */
-.cadastro-container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    padding: 32px;
-    background-color: #f4f4f4;
+.cadastro-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 32px;
+  background: linear-gradient(135deg, #0f0f0f, #1c1c1c);
+  background-image: url('../../assets/images/back.logo.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
-@media (max-width: 600px) {
-    .cadastro-container {
-        padding: 16px;
-    }
+@keyframes fadeInOut {
+  0% { opacity: 0; transform: translateY(-10px); }
+  10% { opacity: 1; transform: translateY(0); }
+  90% { opacity: 1; }
+  100% { opacity: 0; transform: translateY(-10px); }
+}
+
+.mensagem-sucesso {
+  background-color: #d1f7c4;
+  color: #2b5d1c;
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: bold;
+  animation: fadeInOut 3s ease-in-out;
+  position: absolute;
+  top: 20px;
+  width: 90%;
+  max-width: 500px;
+  z-index: 10;
 }

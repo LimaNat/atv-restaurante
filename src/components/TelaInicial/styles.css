@@ -1,50 +1,75 @@
-/* src\components\TelaInicial\styles.css */
-
 .tela-inicial {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 500px;
-    width: 400px;
-    background-color: #000000;
-    border: 2px solid #F22A18;
-    border-radius: 50px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 40px;
-    margin: 40px auto;
-    font-family: 'Courier New', Courier, monospace;
-    backdrop-filter: blur(10px);
-}
+  position: relative;
+  z-index: 1;
 
-h1 {
-    font-size: 2.5rem;
-    color: #CB5145;
-    text-align: center;
-    margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  width: 90%;
+  max-width: 400px;
+  padding: 40px;
+
+  background: rgba(0, 0, 0, 0.6);
+  border: 2px solid #F22A18; /* borda vermelha elegante */
+  border-radius: 50px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6);
+
+  font-family: 'Courier New', Courier, monospace;
+  color: #fff;
+  text-align: center;
 }
 
 .logo {
-    display: block;
-    margin: 1 auto;
-    width: 400px;
-    height: 200;
+  width: 320px;
+  max-width: 90%;
+  height: auto;
+  margin-bottom: 25px;
+  object-fit: contain;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 2.8rem;
+  margin: 10px 0;
+  color: #F22A18;
+  text-shadow: 0 0 8px rgba(242, 42, 24, 0.5);
+}
+
+h1 + h1 {
+  font-weight: 400;
+  font-size: 2.2rem;
+  color: #eee;
+  margin-bottom: 40px;
+  text-shadow: none;
+}
+
+.btn-group {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  width: 100%;
+  max-width: 360px;
 }
 
 button {
-    display: block;
-    margin: 0 auto;
-    position: relative;
-    background-color: #4CAF50;
-    color: rgb(0, 0, 0);
-    border: none;
-    padding: 10px 20px;
-    font-size: 1rem;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+  flex: 1;
+  padding: 14px 0;
+
+  background-color: #F22A18;
+  color: white;
+  border: none;
+  border-radius: 8px;
+
+  font-size: 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+
+  transition: background-color 0.3s ease;
 }
 
 button:hover {
-    background-color: #113b13;
+  background-color: #b22210;
 }

@@ -1,14 +1,13 @@
-// src\pages\Cadastro\index.js
-
-import FormularioCadastro from '../../components/TelaCadastro';
-import './styles.css';
+import React from "react";
+import TelaCadastro from "../../components/TelaCadastro";
+import "./styles.css";
 
 function PaginaCadastro() {
-    return (
-        <div className="cadastro-container">
-        <FormularioCadastro />
-        </div>
-    );
+  return (
+    <div className="cadastro-container">
+      <TelaCadastro />
+    </div>
+  );
 }
 
 export default PaginaCadastro;
